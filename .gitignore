@@ -1,3 +1,6 @@
+.idea
+__pychache__
+venv
 # C++ objects and libs
 *.slo
 *.lo
