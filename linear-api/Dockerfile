@@ -3,10 +3,9 @@ FROM python:3.9-slim
 WORKDIR /app
 
 COPY src/ /app/src
-COPY proj.req /app/
+COPY req.txt /app/
 
-RUN pip install --upgrade pip \
-    pip install -r proj.req
+RUN pip install -r req.txt
 
 CMD ["python", "-m", "src"]
 EXPOSE 8080
