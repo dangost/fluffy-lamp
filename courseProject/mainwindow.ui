@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Курсовая работа</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>801</width>
+      <height>561</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>ЗЛП</string>
+     </attribute>
+     <widget class="QPushButton" name="zlpSolveButton">
+      <property name="geometry">
+       <rect>
+        <x>710</x>
+        <y>500</y>
+        <width>80</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Решить ЗЛП</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="zlpPicLabel">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>491</width>
+        <height>291</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>zlp picture</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Сетевая модель</string>
+     </attribute>
+     <widget class="QPushButton" name="netModelSolveButton">
+      <property name="geometry">
+       <rect>
+        <x>689</x>
+        <y>500</y>
+        <width>101</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Решить модель</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="netModelPicLabel">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>-50</y>
+        <width>441</width>
+        <height>531</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>netModelPicure</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Приложение</string>
+    </property>
+    <addaction name="aboutProgramMenuAction"/>
+    <addaction name="aboutAuthorMenuAction"/>
+    <addaction name="separator"/>
+    <addaction name="exitMenuAction"/>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="aboutProgramMenuAction">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>О програме</string>
+   </property>
+  </action>
+  <action name="aboutAuthorMenuAction">
+   <property name="text">
+    <string>Об авторе</string>
+   </property>
+  </action>
+  <action name="exitMenuAction">
+   <property name="text">
+    <string>Выход</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
